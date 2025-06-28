@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Poppins:wght@400;700&display=swap');
 
 @import "variables";
 
 body {
+    user-select: none;
     font: {
         family: 'Poppins', sans-serif;
         size : 16px;
@@ -22,6 +23,10 @@ body {
     a:hover{
         color: rgb(0, 141, 0);
     }
+}
+
+button{
+    cursor: pointer;
 }
 
 #home{
@@ -63,8 +68,15 @@ body {
 
 
 #jbs-logo{
+    cursor: none;
     height: 40px;
+    transition: transform 10s ease-out;
 }
+
+#jbs-logo:active {
+    transform: rotate(30000deg);
+}
+
 
 #searchbar{
     // background-color: $bgcolor;
@@ -105,7 +117,7 @@ body {
 .navigation-links ul{
     display: flex;
     list-style: none;
-    gap: 15px;  
+    gap: 25px;  
 }
 
 .active-nav-link{
@@ -138,16 +150,6 @@ body {
     align-items: center;
 
 }
-
-#hero-cards-section{
-    display: flex;
-    gap: 50px;
-    justify-content: space-around;
-    padding: 50px 60px;
-    flex: 1;    
-    background-color: #000042;
-    color: white;
-}
 .image-area{
     display: flex;
     justify-content: center;
@@ -168,11 +170,117 @@ body {
     font-family: inter, sans-serif;
     font-size: 3.4em;
     line-height: 100%;
+    margin-bottom: 5px;
+}
+
+.hero-sub-heading{
+    font-family: inter;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 600;
+    // font-weight: bold;
+    color: #475569;
+}
+
+#main-cta-btn{
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    // width: 100%;
+    border: none;
+    transition: transform 2s ease-out;
+    box-sizing: border-box;
+}
+
+#main-cta-btn:hover {
+    color: #000042;
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid black;
+}
+#main-cta-btn:active {
+    color: white;
+    transform: rotate(3000deg) translateX(250px) scale(1);
+    background-color: #000042;
 }
 
 .image-area img {
     height: 95%;
-    aspect-ratio: 4/3;
+    // aspect-ratio: 4/3;
     margin: auto;;
     border-radius: 10px;
 }
+
+    #hero-cards-section{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding: 20px 60px;
+        flex: 1;    
+        background-color: #000042;
+        color: white;
+    }
+
+    .hero-cards{
+        // transform: scale(0.9);
+        width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        // background-color: green;
+        border-radius: 20px;
+        padding: 20px 30px;
+        transition: transform 0.2s ease-out;
+
+        img{
+            height: 35px;
+            width: 35px; // Fallback for aspect-ratio
+            // aspect-r3tio: 1/1;
+        }
+    }
+
+    .hero-cards:hover{
+        background-color: hsl(240, 57%, 21%);
+        transform: translateY(-10px);
+        // transform: scale(1.1);
+
+        .card-learn-more-btn{
+            color: #000042;
+            border: none;
+            background-color: white;
+        }
+    }
+
+    .card-title{
+        font-weight: bold;
+        margin:20px 0 5px;
+    }
+
+    .card-description{
+        font-size: 14px;
+        font-family: inter;
+    }
+
+    .card-learn-more-btn{
+        width: 240px;
+        border-radius: 50px;
+        color: white;
+        background-color: #00000000;
+        border: 1px solid white;
+        padding: 10px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 20px;
+        box-sizing: border-box;
+    }
+    // .card-learn-more-btn:hover{
+    //     color: #000042;
+    //     border: none;
+    //     background-color: white;
+    // }
