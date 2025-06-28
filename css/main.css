@@ -34,7 +34,7 @@ body a:hover {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  margin: 10px 20px;
+  margin: 10px 50px;
   justify-content: space-between;
   overflow: none;
   padding: 10px;
@@ -45,6 +45,8 @@ body a:hover {
   align-items: center;
   width: auto;
   gap: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 #jbs-logo {
@@ -61,6 +63,7 @@ body a:hover {
   padding: 0 10px;
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 #searchbar input {
   border: none;
@@ -107,9 +110,9 @@ body a:hover {
 
 #hero-section {
   height: 52vh;
-  padding: 0 30px;
+  padding: 0 60px;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -118,7 +121,7 @@ body a:hover {
   display: flex;
   gap: 50px;
   justify-content: space-around;
-  padding: 50px 30px;
+  padding: 50px 60px;
   flex: 1;
   background-color: #000042;
   color: white;
@@ -128,10 +131,15 @@ body a:hover {
   display: flex;
   justify-content: center;
   height: 100%;
+  width: 60%;
 }
 
 .text-area {
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .hero-heading {
@@ -142,7 +150,7 @@ body a:hover {
 }
 
 .image-area img {
-  height: 90%;
+  height: 95%;
   aspect-ratio: 4/3;
   margin: auto;
   border-radius: 10px;
