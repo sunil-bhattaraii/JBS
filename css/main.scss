@@ -25,6 +25,8 @@ body {
     }
 }
 
+
+
 button{
     cursor: pointer;
 }
@@ -204,7 +206,7 @@ button{
 }
 #main-cta-btn:active {
     color: white;
-    transform: rotate(3000deg) translateX(250px) scale(1);
+    transform: rotate(3000deg) translateX(250px);
     background-color: #000042;
 }
 
